@@ -14,5 +14,5 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       
-    - name: gcc
-      run:  gcc Miniproject main.c
+    - name: Miniproject
+      run:  gcc $(SRC) $(INC) -o $(PROJECT_NAME)
